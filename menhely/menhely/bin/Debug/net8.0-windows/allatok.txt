@@ -1,0 +1,9 @@
+Nev;Fajta;Kor;Adoptalahato
+Maci;Kutya;2;Igen
+Luna;Macska;1;Igen
+Bodza;Kutya;5;Nem
+Pötty;Macska;3;Igen
+Zizi;Kutya;4;Igen
+Rózsa;Macska;2;Nem
+Fifi;Kutya;1;Igen
+Cirmi;Macska;4;Nem
