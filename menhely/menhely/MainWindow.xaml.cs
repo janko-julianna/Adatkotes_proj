@@ -57,7 +57,5 @@ public partial class MainWindow : Window
     {
         AddAnimal NBWindow = new AddAnimal(Animals);
         NBWindow.ShowDialog();
-        Animals.Clear();
-        FileReader("allatok.txt");
     }
 }
