@@ -1,0 +1,99 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Adatkotes_proj\\menhely\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4F03D5-1A8C-4E99-9C2B-9CD9BE11EADD}|menhely\\menhely.csproj|d:\\adatkotes_proj\\menhely\\menhely\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D4F03D5-1A8C-4E99-9C2B-9CD9BE11EADD}|menhely\\menhely.csproj|solutionrelative:menhely\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4F03D5-1A8C-4E99-9C2B-9CD9BE11EADD}|menhely\\menhely.csproj|d:\\adatkotes_proj\\menhely\\menhely\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3D4F03D5-1A8C-4E99-9C2B-9CD9BE11EADD}|menhely\\menhely.csproj|solutionrelative:menhely\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4F03D5-1A8C-4E99-9C2B-9CD9BE11EADD}|menhely\\menhely.csproj|d:\\adatkotes_proj\\menhely\\menhely\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D4F03D5-1A8C-4E99-9C2B-9CD9BE11EADD}|menhely\\menhely.csproj|solutionrelative:menhely\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4F03D5-1A8C-4E99-9C2B-9CD9BE11EADD}|menhely\\menhely.csproj|d:\\adatkotes_proj\\menhely\\menhely\\addanimal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3D4F03D5-1A8C-4E99-9C2B-9CD9BE11EADD}|menhely\\menhely.csproj|solutionrelative:menhely\\addanimal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4F03D5-1A8C-4E99-9C2B-9CD9BE11EADD}|menhely\\menhely.csproj|d:\\adatkotes_proj\\menhely\\menhely\\addanimal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D4F03D5-1A8C-4E99-9C2B-9CD9BE11EADD}|menhely\\menhely.csproj|solutionrelative:menhely\\addanimal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddAnimal.xaml.cs",
+              "DocumentMoniker": "D:\\Adatkotes_proj\\menhely\\menhely\\AddAnimal.xaml.cs",
+              "RelativeDocumentMoniker": "menhely\\AddAnimal.xaml.cs",
+              "ToolTip": "D:\\Adatkotes_proj\\menhely\\menhely\\AddAnimal.xaml.cs",
+              "RelativeToolTip": "menhely\\AddAnimal.xaml.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAowDQAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T11:21:31.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddAnimal.xaml",
+              "DocumentMoniker": "D:\\Adatkotes_proj\\menhely\\menhely\\AddAnimal.xaml",
+              "RelativeDocumentMoniker": "menhely\\AddAnimal.xaml",
+              "ToolTip": "D:\\Adatkotes_proj\\menhely\\menhely\\AddAnimal.xaml",
+              "RelativeToolTip": "menhely\\AddAnimal.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-04T11:10:54.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Adatkotes_proj\\menhely\\menhely\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "menhely\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Adatkotes_proj\\menhely\\menhely\\MainWindow.xaml.cs",
+              "RelativeToolTip": "menhely\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T11:10:17.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Animal.cs",
+              "DocumentMoniker": "D:\\Adatkotes_proj\\menhely\\menhely\\Animal.cs",
+              "RelativeDocumentMoniker": "menhely\\Animal.cs",
+              "ToolTip": "D:\\Adatkotes_proj\\menhely\\menhely\\Animal.cs",
+              "RelativeToolTip": "menhely\\Animal.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T11:09:59.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Adatkotes_proj\\menhely\\menhely\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "menhely\\MainWindow.xaml",
+              "ToolTip": "D:\\Adatkotes_proj\\menhely\\menhely\\MainWindow.xaml",
+              "RelativeToolTip": "menhely\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-04T11:09:45.79Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

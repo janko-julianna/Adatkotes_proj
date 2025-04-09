@@ -1,0 +1,22 @@
+﻿<Window x:Class="menhely.AddAnimal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:menhely"
+        mc:Ignorable="d"
+        Title="AddAnimal" Height="250" Width="500">
+    <Grid>
+        <StackPanel>
+            <Label Content="Név"/>
+            <TextBox x:Name="tbName"/>
+            <Label Content="Életkor"/>
+            <TextBox x:Name="tbAge"/>
+            <Label Content="Típus"/>
+            <TextBox x:Name="tbType"/>
+            <Label Content="Örökbe fogadható"/>
+            <CheckBox x:Name="cbAdoptable"/>
+            <Button x:Name="btnSave" Height="25" Content="Állat felvétele" Click="btnSave_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

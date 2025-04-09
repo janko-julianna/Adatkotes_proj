@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\janko.julianna\\source\\repos\\menhely\\menhely\\menhely.csproj": {}
+    "D:\\Adatkotes_proj\\menhely\\menhely\\menhely.csproj": {}
   },
   "projects": {
-    "C:\\Users\\janko.julianna\\source\\repos\\menhely\\menhely\\menhely.csproj": {
+    "D:\\Adatkotes_proj\\menhely\\menhely\\menhely.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\janko.julianna\\source\\repos\\menhely\\menhely\\menhely.csproj",
+        "projectUniqueName": "D:\\Adatkotes_proj\\menhely\\menhely\\menhely.csproj",
         "projectName": "menhely",
-        "projectPath": "C:\\Users\\janko.julianna\\source\\repos\\menhely\\menhely\\menhely.csproj",
-        "packagesPath": "C:\\Users\\janko.julianna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\janko.julianna\\source\\repos\\menhely\\menhely\\obj\\",
+        "projectPath": "D:\\Adatkotes_proj\\menhely\\menhely\\menhely.csproj",
+        "packagesPath": "C:\\Users\\feher.kristof1\\.nuget\\packages\\",
+        "outputPath": "D:\\Adatkotes_proj\\menhely\\menhely\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\janko.julianna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\feher.kristof1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,8 +44,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -69,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
