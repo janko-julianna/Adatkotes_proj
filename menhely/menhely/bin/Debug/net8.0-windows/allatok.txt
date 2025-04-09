@@ -7,3 +7,6 @@ Zizi;Kutya;4;Igen
 Rózsa;Macska;2;Nem
 Fifi;Kutya;1;Igen
 Cirmi;Macska;4;Nem
+Béla;Hampter;100;Igen
+Josef;eb;2;Nem
+a;a;1;Igen

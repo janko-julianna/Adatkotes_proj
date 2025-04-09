@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:BindingLibrary"
+        xmlns:local="clr-namespace:menhely"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -16,30 +16,32 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Label Background="Gray" Foreground="Yellow" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" FontWeight="Bold">Házikönyvtár</Label>
-        <ListView Height="290" Grid.Row="1" x:Name="LstVBooks">
+        <Label Background="LightBlue" Foreground="Green" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" FontWeight="Bold">Projekt Menhely</Label>
+        <ListView Height="290" Grid.Row="1" x:Name="LstVAnimals">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
-                        <TextBlock Text="{Binding Author}"></TextBlock>
-                        <TextBlock Text="{Binding Title}"></TextBlock>
-                        <TextBlock Text="{Binding Year}"></TextBlock>
+                        <TextBlock Text="{Binding Name}"></TextBlock>
+                        <TextBlock Text="{Binding Type}"></TextBlock>
+                        <TextBlock Text="{Binding Age}"></TextBlock>
+                        <TextBlock Text="{Binding Adoptable}"></TextBlock>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button Grid.Row="2" Width="160" x:Name="BtnNewBook" Click="BtnNewBook_Click">Új könyv</Button>
+        <Button Grid.Row="2" Width="160" x:Name="BtnNewAnimal" Click="BtnNewAnimal_Click">Új könyv</Button>
         <GroupBox Grid.Row="1" Grid.Column="1" Header="Könyv keresése cím alapján">
             <StackPanel>
                 <TextBox x:Name="TbxSearchField" Width="140" Margin="5"></TextBox>
                 <Button x:Name="BtnSearch" Width="140" Margin="5" Click="BtnSearch_Click">Keresés</Button>
-                <ListView x:Name="LstVSearchedBooks" Height="220">
+                <ListView x:Name="LstVSearchedAnimals" Height="220">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
-                                <TextBlock Text="{Binding Author}"></TextBlock>
-                                <TextBlock Text="{Binding Title}"></TextBlock>
-                                <TextBlock Text="{Binding Year}"></TextBlock>
+                                <TextBlock Text="{Binding Name}"></TextBlock>
+                                <TextBlock Text="{Binding Type}"></TextBlock>
+                                <TextBlock Text="{Binding Age}"></TextBlock>
+                                <TextBlock Text="{Binding Adoptable}"></TextBlock>
                             </StackPanel>
                         </DataTemplate>
                     </ListView.ItemTemplate>

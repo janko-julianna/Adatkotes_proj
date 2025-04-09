@@ -20,41 +20,42 @@ namespace menhely;
 /// </summary>
 public partial class MainWindow : Window
 {
-    public ObservableCollection<Book> Books = new ObservableCollection<Book>();
-    public ObservableCollection<Book> FilteredBooks = new ObservableCollection<Book>();
-    public List<Book> FilteredBooksList = new List<Book>();
+    public ObservableCollection<Animal> Animals = new ObservableCollection<Animal>();
+    public ObservableCollection<Animal> FilteredAnimals = new ObservableCollection<Animal>();
+    public List<Animal> FilteredAnimalsList = new List<Animal>();
     public MainWindow()
     {
         InitializeComponent();
-        FileReader("hazikonyvtar.txt");
-        LstVBooks.ItemsSource = Books;
+        FileReader("allatok.txt");
+        LstVAnimals.ItemsSource = Animals;
     }
 
     public void FileReader(string FileName)
     {
         string[] dataIn = File.ReadAllLines(FileName);
-        foreach (var book in dataIn.Skip(1))
+        foreach (var animal in dataIn.Skip(1))
         {
-            string[] row = book.Split(';');
-            Book NewBook = new Book(row[0], row[1], int.Parse(row[2]));
-            Books.Add(NewBook);
+            string[] row = animal.Split(';');
+            Animal NewAnimal = new Animal(row[0], row[1], int.Parse(row[2]), row[3]);
+            Animals.Add(NewAnimal);
         }
     }
 
     private void BtnSearch_Click(object sender, RoutedEventArgs e)
     {
+        FilteredAnimals.Clear();
         string SearchString = TbxSearchField.Text.ToString();
-        FilteredBooksList = Books.Where(x => (x.Title).Contains(SearchString)).ToList();
-        foreach (var FBook in FilteredBooksList)
+        FilteredAnimalsList = Animals.Where(x => (x.Name.ToUpper()).StartsWith(SearchString.ToUpper())).ToList();
+        foreach (var FAnimal in FilteredAnimalsList)
         {
-            FilteredBooks.Add(FBook);
+            FilteredAnimals.Add(FAnimal);
         }
-        LstVSearchedBooks.ItemsSource = FilteredBooks;
+        LstVSearchedAnimals.ItemsSource = FilteredAnimals;
     }
 
-    private void BtnNewBook_Click(object sender, RoutedEventArgs e)
+    private void BtnNewAnimal_Click(object sender, RoutedEventArgs e)
     {
-        NewBookWindow NBWindow = new NewBookWindow();
+        AddAnimal NBWindow = new AddAnimal(Animals);
         NBWindow.ShowDialog();
     }
 }
