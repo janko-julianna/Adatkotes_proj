@@ -12,6 +12,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
 using System.Runtime.CompilerServices;
+using System.DirectoryServices.ActiveDirectory;
 
 namespace menhely;
 
@@ -32,7 +33,22 @@ public partial class MainWindow : Window
 
     public void FileReader(string FileName)
     {
-        string[] dataIn = File.ReadAllLines(FileName);
+        string[] dataIn;
+        if (!File.Exists(FileName))
+        {
+            string projectRoot = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+            FileName = System.IO.Path.Combine(projectRoot, FileName);
+        }
+
+        if (File.Exists(FileName))
+        {
+            dataIn = File.ReadAllLines(FileName);
+        }
+        else
+        {
+            Console.WriteLine("A megadott fájl nem található: " + FileName);
+            dataIn = Array.Empty<string>();
+        }
         foreach (var animal in dataIn.Skip(1))
         {
             string[] row = animal.Split(';');

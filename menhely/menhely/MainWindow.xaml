@@ -16,36 +16,39 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Label Background="LightBlue" Foreground="Green" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" FontWeight="Bold">Projekt Menhely</Label>
-        <ListView Height="290" Grid.Row="1" x:Name="LstVAnimals">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel>
-                        <TextBlock Text="{Binding Name}"></TextBlock>
-                        <TextBlock Text="{Binding Type}"></TextBlock>
-                        <TextBlock Text="{Binding Age}"></TextBlock>
-                        <TextBlock Text="{Binding Adoptable}"></TextBlock>
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <Button Grid.Row="2" Width="160" x:Name="BtnNewAnimal" Click="BtnNewAnimal_Click">Új könyv</Button>
-        <GroupBox Grid.Row="1" Grid.Column="1" Header="Könyv keresése cím alapján">
+
+
+        <Label Background="LightBlue" Foreground="Green" Grid.ColumnSpan="2"
+               HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+               FontSize="32" FontWeight="Bold">Menhely</Label>
+
+        
+        <DataGrid Height="290" Grid.Row="1" x:Name="LstVAnimals" 
+                  AutoGenerateColumns="False" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Név" Binding="{Binding Name}" Width="*"/>
+                <DataGridTextColumn Header="Típus" Binding="{Binding Type}" Width="*"/>
+                <DataGridTextColumn Header="Kor" Binding="{Binding Age}" Width="*"/>
+                <DataGridTextColumn Header="Örökbe fogadható" Binding="{Binding Adoptable}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Grid.Row="2" Width="160" x:Name="BtnNewAnimal" Click="BtnNewAnimal_Click">Új állat</Button>
+
+        <GroupBox Grid.Row="1" Grid.Column="1" Header="Állatok keresése név alapján:">
             <StackPanel>
                 <TextBox x:Name="TbxSearchField" Width="140" Margin="5"></TextBox>
                 <Button x:Name="BtnSearch" Width="140" Margin="5" Click="BtnSearch_Click">Keresés</Button>
-                <ListView x:Name="LstVSearchedAnimals" Height="220">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <StackPanel>
-                                <TextBlock Text="{Binding Name}"></TextBlock>
-                                <TextBlock Text="{Binding Type}"></TextBlock>
-                                <TextBlock Text="{Binding Age}"></TextBlock>
-                                <TextBlock Text="{Binding Adoptable}"></TextBlock>
-                            </StackPanel>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+
+                <DataGrid x:Name="LstVSearchedAnimals" Height="220" AutoGenerateColumns="False" 
+                          CanUserAddRows="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Név" Binding="{Binding Name}" Width="*"/>
+                        <DataGridTextColumn Header="Típus" Binding="{Binding Type}" Width="*"/>
+                        <DataGridTextColumn Header="Kor" Binding="{Binding Age}" Width="*"/>
+                        <DataGridTextColumn Header="Örökbe fogadható" Binding="{Binding Adoptable}" Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
             </StackPanel>
         </GroupBox>
     </Grid>
