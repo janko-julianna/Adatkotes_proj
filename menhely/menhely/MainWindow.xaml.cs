@@ -40,7 +40,6 @@ public partial class MainWindow : Window
             FileName = System.IO.Path.Combine(projectRoot, FileName);
         }
 
-        // Fájl beolvasása, ha megtaláltuk
         if (File.Exists(FileName))
         {
             dataIn = File.ReadAllLines(FileName);
