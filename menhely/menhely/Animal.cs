@@ -8,10 +8,10 @@ namespace menhely
 {
     public class Animal
     {
-        public string Name { get; private set; }
-        public string Type { get; private set; }
-        public bool Adoptable { get; private set; }
-        public int Age { get; private set; }
+        public string Name { get; set; }
+        public string Type { get; set; }
+        public bool Adoptable { get; set; }
+        public int Age { get; set; }
         public Animal(string Name, string Type, int Age, string adoptable)
         {
             this.Name = Name;

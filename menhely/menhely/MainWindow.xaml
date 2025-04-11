@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:menhely"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Closing="Window_Closing">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -22,9 +22,9 @@
                HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
                FontSize="32" FontWeight="Bold">Menhely</Label>
 
-        
-        <DataGrid Height="290" Grid.Row="1" x:Name="LstVAnimals" 
-                  AutoGenerateColumns="False" CanUserAddRows="False">
+
+        <DataGrid Height="290" Grid.Row="1" x:Name="LstVAnimals" SelectedItem="{Binding ModAnimal}"
+            AutoGenerateColumns="False" CanUserAddRows="False" SelectionChanged="LstVAnimals_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Név" Binding="{Binding Name}" Width="*"/>
                 <DataGridTextColumn Header="Típus" Binding="{Binding Type}" Width="*"/>
