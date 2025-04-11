@@ -46,7 +46,7 @@ namespace menhely
             }
             catch 
             {
-                age = 0;
+                age = 1;
             }
 
             animals.Add(new Animal(tbName.Text, tbType.Text, age, adoptable));

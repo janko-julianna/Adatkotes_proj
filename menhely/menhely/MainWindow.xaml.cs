@@ -24,11 +24,14 @@ public partial class MainWindow : Window
     public ObservableCollection<Animal> Animals = new ObservableCollection<Animal>();
     public ObservableCollection<Animal> FilteredAnimals = new ObservableCollection<Animal>();
     public List<Animal> FilteredAnimalsList = new List<Animal>();
+    public Animal ModAnimal { get; set; }
     public MainWindow()
     {
         InitializeComponent();
         FileReader("allatok.txt");
+        LstVAnimals.Items.Clear();
         LstVAnimals.ItemsSource = Animals;
+        DataContext = this;
     }
 
     public void FileReader(string FileName)
@@ -73,5 +76,22 @@ public partial class MainWindow : Window
     {
         AddAnimal NBWindow = new AddAnimal(Animals);
         NBWindow.ShowDialog();
+    }
+
+    private void LstVAnimals_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        Update update = new Update(ModAnimal);
+        update.ShowDialog();
+        LstVAnimals.Items.Refresh();
+    }
+
+    private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+    {
+        string valami = "";
+        foreach (var item in Animals)
+        {
+            valami += $"{item.Name};{item.Type};{item.Age};{item.Adoptable}\n";
+        }
+        File.WriteAllText("allatok.txt", valami);
     }
 }
